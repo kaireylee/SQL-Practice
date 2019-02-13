@@ -1,0 +1,7 @@
+--18
+select ROUND(ABS(MIN(LAT_N) - MAX(LAT_N)) + ABS(MIN(LONG_W) - MAX(LONG_W)), 4)
+from STATION
+
+--19
+select ROUND(SQRT(POWER((MIN(LAT_N) - MAX(LAT_N)), 2) + POWER((MIN(LONG_W) - MAX(LONG_W)), 2)), 4)
+from STATION
