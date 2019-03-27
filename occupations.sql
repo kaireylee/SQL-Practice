@@ -12,4 +12,4 @@ from(
   from OCCUPATIONS
   order by Name
 ) Temp
-group by RowNumber
+group by RowNumber /**/
